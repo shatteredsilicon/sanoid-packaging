@@ -1,4 +1,4 @@
-%global upstream_version 2.3.0
+%{!?upstream_version:%{error:upstream_version must be defined, e.g. rpmbuild --define 'upstream_version 2.3.0'}}
 
 # Enable with systemctl "enable sanoid.timer"
 %global _with_systemd 1
